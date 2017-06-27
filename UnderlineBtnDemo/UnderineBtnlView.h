@@ -11,11 +11,11 @@
 @interface UnderineBtnlView : UIView
 
 //点击按钮回调block
-typedef void (^HeaderViewBlock)(NSInteger tag);
+typedef void (^UnderlineViewBlock)(NSInteger tag);
 
 
 @property (nonatomic,strong) UILabel *lineLabel;
-@property (nonatomic,copy)HeaderViewBlock headerViewBlcok;
+@property (nonatomic,copy)UnderlineViewBlock underlineBlcok;
 @property (nonatomic,strong)NSMutableArray *btnArr;//按钮的数组
 
 @property (nonatomic,assign)NSInteger page;
@@ -23,6 +23,8 @@ typedef void (^HeaderViewBlock)(NSInteger tag);
 - (instancetype)initWithFrame:(CGRect)frame andTitle:(NSArray *)titleArr;
 
 
+
+//如果有sc滑动页面 调用此方法传入页码则下划线随之移动
 -(void)chageLine:(NSInteger)page;
 
 @end

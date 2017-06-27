@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "18909AF81F024B6800829437"
+               BuildableName = "UnderlineBtnDemo.app"
+               BlueprintName = "UnderlineBtnDemo"
+               ReferencedContainer = "container:UnderlineBtnDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "18909B111F024B6800829437"
+               BuildableName = "UnderlineBtnDemoTests.xctest"
+               BlueprintName = "UnderlineBtnDemoTests"
+               ReferencedContainer = "container:UnderlineBtnDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "18909B1C1F024B6800829437"
+               BuildableName = "UnderlineBtnDemoUITests.xctest"
+               BlueprintName = "UnderlineBtnDemoUITests"
+               ReferencedContainer = "container:UnderlineBtnDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "18909AF81F024B6800829437"
+            BuildableName = "UnderlineBtnDemo.app"
+            BlueprintName = "UnderlineBtnDemo"
+            ReferencedContainer = "container:UnderlineBtnDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "18909AF81F024B6800829437"
+            BuildableName = "UnderlineBtnDemo.app"
+            BlueprintName = "UnderlineBtnDemo"
+            ReferencedContainer = "container:UnderlineBtnDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "18909AF81F024B6800829437"
+            BuildableName = "UnderlineBtnDemo.app"
+            BlueprintName = "UnderlineBtnDemo"
+            ReferencedContainer = "container:UnderlineBtnDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

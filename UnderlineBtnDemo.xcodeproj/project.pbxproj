@@ -15,6 +15,7 @@
 		18909B0C1F024B6800829437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18909B0A1F024B6800829437 /* LaunchScreen.storyboard */; };
 		18909B171F024B6800829437 /* UnderlineBtnDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18909B161F024B6800829437 /* UnderlineBtnDemoTests.m */; };
 		18909B221F024B6800829437 /* UnderlineBtnDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18909B211F024B6800829437 /* UnderlineBtnDemoUITests.m */; };
+		18909B311F024B9800829437 /* UnderineBtnlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18909B301F024B9800829437 /* UnderineBtnlView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		18909B1D1F024B6800829437 /* UnderlineBtnDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnderlineBtnDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18909B211F024B6800829437 /* UnderlineBtnDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnderlineBtnDemoUITests.m; sourceTree = "<group>"; };
 		18909B231F024B6800829437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18909B2F1F024B9800829437 /* UnderineBtnlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderineBtnlView.h; sourceTree = "<group>"; };
+		18909B301F024B9800829437 /* UnderineBtnlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderineBtnlView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		18909AFB1F024B6800829437 /* UnderlineBtnDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18909B2F1F024B9800829437 /* UnderineBtnlView.h */,
+				18909B301F024B9800829437 /* UnderineBtnlView.m */,
 				18909AFF1F024B6800829437 /* AppDelegate.h */,
 				18909B001F024B6800829437 /* AppDelegate.m */,
 				18909B021F024B6800829437 /* ViewController.h */,
@@ -277,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18909B041F024B6800829437 /* ViewController.m in Sources */,
+				18909B311F024B9800829437 /* UnderineBtnlView.m in Sources */,
 				18909B011F024B6800829437 /* AppDelegate.m in Sources */,
 				18909AFE1F024B6800829437 /* main.m in Sources */,
 			);

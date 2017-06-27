@@ -45,13 +45,19 @@
     
     self.lineLabel = [[UILabel alloc]initWithFrame:CGRectMake(8, frame.size.height-2, btnWidth-16, 2)];
     
-    self.lineLabel.backgroundColor = kDefaultColor;
+    self.lineLabel.backgroundColor = [UIColor colorWithRed:1.00 green:0.47 blue:0.40 alpha:1.00];
     [self addSubview:self.lineLabel];
     
     for (int i=0; i<titleArr.count; i++) {
 
-        UIButton *btn = [JXUI createBt:CGRectMake(i*btnWidth, 0, btnWidth, frame.size.height-2) targ:self sel:@selector(headerViewBtnClick:) titColor:[UIColor blackColor] font:[UIFont systemFontOfSize:17] image:nil backGroundImage:nil title:titleArr[i]];
-        [btn setTitleColor:kDefaultColor forState:UIControlStateSelected];
+        
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.frame = CGRectMake(i*btnWidth, 0, btnWidth, frame.size.height-2);
+        [btn addTarget:self action:@selector(headerViewBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btn setTitle:titleArr[i] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor colorWithRed:1.00 green:0.47 blue:0.40 alpha:1.00] forState:UIControlStateSelected];
+        
         [self.btnArr addObject:btn];
         [self addSubview:btn];
         
@@ -72,7 +78,7 @@
             
             btn.selected = YES;
             [UIView animateWithDuration:0.1 animations:^{
-                self.lineLabel.center = CGPointMake(btn.centerX, btn.bottom+1);
+                self.lineLabel.center = CGPointMake(btn.center.x, btn.frame.origin.y+btn.frame.size.height+1);
             }];
         }else{
             btn.selected = NO;
@@ -96,13 +102,13 @@
         if (button==btn) {
             
             
-            if (self.headerViewBlcok) {
-                self.headerViewBlcok(i);
+            if (self.underlineBlcok) {
+                self.underlineBlcok(i);
                 NSLog(@"第几个按钮===%d",i);
             }
             button.selected = YES;
             [UIView animateWithDuration:0.2 animations:^{
-                self.lineLabel.center = CGPointMake(btn.centerX, btn.bottom+1);
+                self.lineLabel.center = CGPointMake(btn.center.x, btn.frame.origin.y+btn.frame.size.height+1);
             }];
 
         }else
